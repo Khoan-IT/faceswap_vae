@@ -1,0 +1,25 @@
+common:
+  use_cuda: !!bool True
+  checkpoint_folder: './log/hai_ba/checkpoint'
+  sample_folder: './log/hai_ba/sample'
+
+data:
+  first_user: './data/cropped_faces_hai'
+  second_user: './data/cropped_faces_hai_ba'
+
+train:
+  learning_rate: 0.005
+  batch_size: 16
+  epochs: 20000
+  sample_number: 5
+  continue_once: !!bool False
+  seed: 1234
+
+model:
+  image_size: 256
+  in_channels: 3
+  latent_dim: 256
+  kld_weight: 0.00025
+
+test:
+  checkpoint_path: ./checkpoint/ba/checkpoint_2187.pt
