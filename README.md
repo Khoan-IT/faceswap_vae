@@ -1,4 +1,4 @@
-# FACESWAP WITH VAE
+# FaceSwap with VAE
 
 ## Architecture
 ![](./documents/image/architecture.png)
@@ -35,6 +35,7 @@ Replace `checkpoint_path` in `config.yaml` file with path to your checkpoint.
 RUN:
 ```
 python inference.py --image_path=path_to_image
+
 Usage example: python inference.py --image_path=./data/hai/1.jpg
 ```
 
