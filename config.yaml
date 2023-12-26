@@ -1,11 +1,11 @@
 common:
   use_cuda: !!bool True
-  checkpoint_folder: './log/hai_ba/checkpoint'
-  sample_folder: './log/hai_ba/sample'
+  checkpoint_folder: './log/hai_ba/checkpoint' # Folder contains checkpoit
+  sample_folder: './log/hai_ba/sample' # Folder contains sample in training process
 
 data:
-  first_user: './data/cropped_faces_hai'
-  second_user: './data/cropped_faces_hai_ba'
+  first_user: './data/cropped_faces_hai' # Folder contains images of first user
+  second_user: './data/cropped_faces_hai_ba' # Folder contains images of second user
 
 train:
   learning_rate: 0.005
@@ -22,4 +22,4 @@ model:
   kld_weight: 0.00025
 
 test:
-  checkpoint_path: ./checkpoint/ba/checkpoint_2187.pt
+  checkpoint_path: ./checkpoint/ba/checkpoint_2187.pt # Path to checkpoint used for inference process
